@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Noelstudioss Music</title>
+  <link rel="icon" type="image/png" href="https://static-00.iconduck.com/assets.00/music-icon-2048x2048-eqj070t1.png">
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Barra fixa no topo direito */
+  .top-nav {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 16px;
+    z-index: 1000;
+  }
+  .btn-nav {
+    background: transparent;
+    border: 2px solid #22c55e;
+    color: #22c55e;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .btn-nav:hover {
+    background-color: #22c55e;
+    color: #111;
+  }
+
+  /* Perfil fixo logo abaixo dos botões */
+  .profile-info {
+    position: fixed;
+    top: 60px;
+    right: 16px;
+    font-size: 1.1rem;
+    color: #4ade80;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    user-select: none;
+    z-index: 1000;
+  }
+
+  /* Card principal */
+  .card {
+    background: rgba(30, 30, 30, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(34, 139, 34, 0.6);
+    max-width: 360px;
+    width: 90vw;
+    padding: 32px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  /* Título */
+  .card h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #4ade80; /* verde */
+    text-shadow: 0 0 10px #22c55e;
+  }
+
+  /* Subtítulo */
+  .card p {
+    font-size: 1.15rem;
+    color: #a1a1a1;
+    font-weight: 400;
+  }
+
+  /* Email */
+  .email-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #22c55e;
+    text-decoration: none;
+    border: 2px solid #22c55e;
+    padding: 12px 26px;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: center;
+  }
+  .email-btn:hover {
+    background-color: #22c55e;
+    color: #111;
+  }
+
+  /* Botões sociais */
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .social-btn {
+    font-size: 1rem;
+    color: #22c55e;
+    border: 2px solid #22c55e;
+    padding: 10px 10px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .social-btn:hover {
+    background-color: #22c55e;
+    color: #111;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 24px;
+    font-size: 0.85rem;
+    color: #6b7280;
+  }
+
+  /* Responsividade */
+  @media (max-width: 400px) {
+    .card {
+      padding: 28px 20px;
+    }
+    .card h1 {
+      font-size: 2rem;
+    }
+    .email-btn, .social-btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+    .btn-nav {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+    .profile-info {
+      font-size: 1rem;
+      top: 52px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a href="profile.html" class="btn-nav">Profile</a>
+  <a href="index.html" class="btn-nav">Home</a>
+</nav>
+
+<div class="profile-info"></div>
+
+<div class="card">
+  <h1>Noelstudioss Music</h1>
+  <p>Digital Artist & Music Producer</p>
+
+  <a href="mailto:manoel.rj.junior@gmail.com" class="email-btn">📧 manoel.rj.junior@gmail.com</a>
+
+  <div class="social-buttons">
+    <a href="https://open.spotify.com/artist/5T2h9YTUSm8C7VL5vkoQAA" target="_blank" class="social-btn" rel="noopener noreferrer">Spotify</a>
+    <a href="https://www.instagram.com/noelstudioss/" target="_blank" class="social-btn" rel="noopener noreferrer">Instagram</a>
+    <a href="https://soundcloud.com/noelstudioss-music" target="_blank" class="social-btn" rel="noopener noreferrer">SoundCloud</a>
+  </div>
+
+  <footer>© 2025 Noelstudioss Music. All rights reserved.</footer>
+</div>
+
+</body>
+</html>
