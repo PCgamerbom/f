@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Perfil - Noelstudioss</title>
+  <link rel="icon" type="image/png" href="https://static-00.iconduck.com/assets.00/music-icon-2048x2048-eqj070t1.png">
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+  }
+
+  /* Barra fixa no topo direito */
+  .top-nav {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 16px;
+    z-index: 1000;
+  }
+  .btn-nav {
+    background: transparent;
+    border: 2px solid #22c55e;
+    color: #22c55e;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .btn-nav:hover {
+    background-color: #22c55e;
+    color: #111;
+  }
+
+  /* Container do texto */
+  .profile-card {
+    background: rgba(30, 30, 30, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(34, 139, 34, 0.6);
+    max-width: 600px;
+    width: 90vw;
+    padding: 32px 28px;
+    line-height: 1.6;
+    color: #a1a1a1;
+    font-size: 1.15rem;
+    text-align: justify;
+  }
+
+  /* Destaques em verde */
+  .highlight {
+    color: #22c55e;
+    font-weight: 700;
+  }
+
+  /* Título */
+  .profile-card h1 {
+    color: #4ade80;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px #22c55e;
+  }
+
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .profile-card {
+      padding: 24px 20px;
+      font-size: 1rem;
+    }
+    .profile-card h1 {
+      font-size: 1.8rem;
+    }
+    .btn-nav {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a href="index.html" class="btn-nav">Início</a>
+</nav>
+
+<div class="profile-card">
+  <h1>Who I Am</h1>
+  <p>
+    Yo, what’s good? I’m <span class="highlight">Noelstudioss Music</span>, but real talk, my name’s, <span class="highlight">Emanoel Ribeiro</span>. I’m 18 years old, a digital artist and music producer — I’m all about creating heavy beats and visuals that hit hard.
+  </p>
+  <p>
+    Since I was a kid, music’s been my escape, my way to spit what I feel and see in this world. My mission? To connect with the streets and everyone vibin’ out there, keepin’ it real and bringing fresh, authentic sound.
+  </p>
+  <p>
+    Besides making tracks, I’m into digital design and 3D modeling — I like to add that visual drip to my music, making it a full-on experience, you feel me?
+  </p>
+  <p>
+    I’m always grinding, learning, and leveling up, staying humble but focused. Roll with me on this journey — it’s all about realness, no cap.
+  </p>
+</div>
+
+</body>
+</html>
